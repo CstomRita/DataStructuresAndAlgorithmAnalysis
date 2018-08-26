@@ -1,7 +1,6 @@
 package Capter3;
 
-import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.*;
 
 /**
  * @ Author     ：CstomRita
@@ -12,15 +11,6 @@ import java.util.Iterator;
  */
 public class Test {
 
-    public static int[] a = new int[10];
-    public static int test(int i){
-        System.out.println("di"+i);
-        if(i == 0 || i == 1) {
-            return i;
-        }
-        a[i] = test(i--);
-        return i;
-    }
     public static void main(String[] args) {
 //        BinarySearchTree<Integer> tree = new BinarySearchTree<Integer>();
 //        tree.insert(6);
@@ -32,14 +22,6 @@ public class Test {
 //        tree.insert(0);
 //        tree.remove(2);
 //        tree.print();
-//        test(5);
-//        System.out.println(a.toString());
-
-      BasicGenerator<String> generator = new BasicGenerator<String>(String.class);
-        String s1 = generator.next();
-        String s2 = generator.next();
-        String s3 = generator.next();
-        System.out.println(s1 == s2);
     }
     static class BasicGenerator<T> implements Generator<T> {
 

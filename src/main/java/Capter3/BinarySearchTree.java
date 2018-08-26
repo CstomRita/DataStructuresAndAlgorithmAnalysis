@@ -42,7 +42,7 @@ public class BinarySearchTree<T extends Comparable<? super T>> {
         //理解一下树的概念，有点像二分查找
         if(index < 0) {//t比较小，应该找node的左子树（这个节点的左节点）
             return contains(t,node.left);
-        }else if(index > 0) {//由子树
+        }else if(index > 0) {//右子树
             return contains(t,node.right);
         }else{ //相等
             return true;
