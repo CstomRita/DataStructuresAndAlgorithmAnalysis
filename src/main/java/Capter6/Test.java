@@ -11,10 +11,11 @@ import java.util.Arrays;
  */
 public class Test {
 
-    private static Sort<Integer> sort = new Sort(new Integer[]{4,8,1,0,4,9,7});
+    private static Sort<Integer> sort = new Sort(new Integer[]{1,2,5,3,4});
 
     public static void main(String[] args) {
-        sort.mergeSort2();
-        System.out.println(Arrays.toString(sort.nums));
+//        sort.quickSort();
+//        System.out.println(Arrays.toString(sort.nums));
+        System.out.println(sort.quickSelect(4));
     }
 }
